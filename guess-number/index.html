@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+    </header>
+    
+    <section class="container" id="container">
+    <p class="random-number" id="random-number"></p>
+        <h1>Guess Number</h1>
+        <p>Select a range</p>
+        <form action="" class="container-form" id="container-form">
+            <div class="container-range-inputs">
+                <input type="range" class="input-range" id="input-range-1" min="0" max="100" value="0" step="1">
+                <input type="range" class="input-range" id="input-range-2" min="0" max="100" value="100" step="1">
+            </div>
+            <p class="selected-range" id="selected-range"></p>
+            <input type="number" class="guess-number" id="guess-number" placeholder="Guess" min="0" max="1000" step="1">
+            <button type="button" class="shuffle-button" id="shuffle-button">Shuffle</button>
+            <button type="submit" class="guess-button" id="guess-button">Guess</button>
+            <div class="container-checkbox">
+                <p>Show Random Number: </p>
+                <label class="switch" id="switch">
+                    <input type="checkbox" class="input-checkbox" id="input-checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <p class="message" id="message"></p>
+        </form>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
