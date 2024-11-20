@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(15, 15, 15);
+    color: white;
+    height: 100vh;
+    display: flex;
+}
+
+header i {
+    position: absolute;
+    left: 2.5rem;
+    top: 2.5rem;
+    font-size: 1.5rem;
+    color: white;
+    transition: 0.4s ease;
+}
+
+header i:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.container {
+    text-align: center;
+    max-width: 20rem;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: 12px 12px 0 white;
+}
+
+.container .number {
+    font-size: 4rem;
+    margin: 4rem 0;
+}
+
+.container .buttons-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.buttons-container button {
+    width: 5.5rem;
+    height: 2rem;
+    background-color: white;
+    border: 0;
+    border-radius: 2rem;
+}
+
+.buttons-container button:hover {
+    color: white;
+    background-color: rgb(15, 15, 15);
+    box-shadow: 12px 12px 0 white;
+    cursor: pointer;
+}
