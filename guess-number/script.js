@@ -40,10 +40,18 @@ function checkGuess(event) {
     // Declare guess number and convert to number
     const guessNumber = parseInt(document.getElementById('guess-number').value);
     // Check guess number and return message
-    if (guessNumber > randomNumber) {
+    if (guessNumber > randomNumber + 7) {
         message.textContent = `Too high!`;
-    } else if (guessNumber < randomNumber) {
+    } else if (guessNumber > randomNumber + 3) {
+        message.textContent = `High but close :)`;
+    } else if (guessNumber > randomNumber) {
+        message.textContent = `High but so close :)`;
+    } else if (guessNumber < randomNumber - 7) {
         message.textContent = `Too low!`;
+    } else if (guessNumber < randomNumber - 3) {
+        message.textContent = `Low but close :)`;
+    } else if (guessNumber < randomNumber) {
+        message.textContent = `Low but so close :)`;
     } else if (guessNumber === randomNumber) {
         message.textContent = `Correct!`;
         // Make green body's background for 1 second
