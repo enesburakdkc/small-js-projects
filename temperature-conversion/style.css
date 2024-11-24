@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background-color: rgb(15, 15, 15);
+}
+
+header i {
+    position: absolute;
+    left: 2.5rem;
+    top: 2.5rem;
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.4s ease;
+}
+
+header i:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 1rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 3rem;
+    color: rgb(15, 15, 15);
+    transition: transform 0.4s ease;
+}
+
+.form {
+    display: flex;
+    width: 12rem;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    gap: 1rem;
+}
+
+.input-number-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.input-number {
+    padding: 0.5rem;
+    border-radius: 2rem;
+    border: 0;
+    width: 2.5rem;
+    text-align: center;
+    background-color: rgb(15, 15, 15);
+    color: white;
+}
+
+.input-number:focus {
+    outline: 2px solid #1089eb;
+}
+
+.input-number::-webkit-inner-spin-button,
+.input-number::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.input-radio {
+    margin-right: 0.5rem;
+}
