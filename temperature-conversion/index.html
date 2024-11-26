@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <a href="../"><i class="fa-solid fa-house"></i></a>
+    </header>
+
+    <section class="container" id="container">
+        <h1>Temperature Conversion</h1>
+
+        <form action="" class="form" id="form">
+            <div class="input-number-container">
+                <input type="number" class="input-number" id="input-number" value="0" placeholder="0">
+                <p id="first-temperature">C°</p>
+                <p> is</p>
+                <input type="number" class="input-number" id="output-number" value="32" readonly>
+                <p id="second-temperature">F°</p>
+            </div>
+            <div class="input-radio-container">
+                <input type="radio" class="input-radio" id="input-radio-celsius-to-fahrenheit" name="input-radio-temperature-conversion" checked>
+                <label for="input-radio-celsius-to-fahrenheit">Celsius to Fahrenheit</label>
+                <br>
+                <input type="radio" class="input-radio" id="input-radio-fahrenheit-to-celsius" name="input-radio-temperature-conversion">
+                <label for="input-radio-fahrenheit-to-celsius">Fahrenheit to Celsius</label>
+            </div>
+        </form>
+
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
