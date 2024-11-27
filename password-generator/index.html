@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <a href="../"><i class="fa-solid fa-house"></i></a>
+    </header>
+
+    <section class="container">
+        <div class="row"><h1>Password Generator</h1></div>
+        <form action="" class="form row">
+
+            <label for="password-length row">Length of password chars: <p class="length-message" id="length-message">1</p></label>
+
+            <div class="container-range-inputs">
+                <input type="range" class="password-length" id="password-length" min="1" max="20" value="1" step="1">
+            </div>
+
+            <div class="container-checkboxes">
+                <div class="container-checkbox">
+                    <label class="switch" id="switch">
+                        <input type="checkbox" class="input-checkbox" id="lowercase">
+                        <span class="slider"></span>
+                    </label>
+                    <p>Lowercase</p>
+                </div>
+                
+                <div class="container-checkbox">
+                    <label class="switch" id="switch">
+                        <input type="checkbox" class="input-checkbox" id="uppercase">
+                        <span class="slider"></span>
+                    </label>
+                    <p>Uppercase</p>
+                </div>
+                
+                <div class="container-checkbox">
+                    <label class="switch" id="switch">
+                        <input type="checkbox" class="input-checkbox" id="numbers">
+                        <span class="slider"></span>
+                    </label>
+                    <p>Numbers</p>
+                </div>
+                
+                <div class="container-checkbox">
+                    <label class="switch" id="switch">
+                        <input type="checkbox" class="input-checkbox" id="symbols">
+                        <span class="slider"></span>
+                    </label>
+                    <p>Symbols</p>
+                </div>
+            </div>
+
+            <button class="generate-button" id="generate-button">Generate</button>
+        </form>
+
+        <p class="password-message row" id="password-message"><b class=""></b></p>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
