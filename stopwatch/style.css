@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    color: rgb(15, 15, 15);
+    height: 100vh;
+    display: flex;
+    background-color: rgb(15, 15, 15);
+}
+
+header i {
+    position: absolute;
+    left: 2.5rem;
+    top: 2.5rem;
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.4s ease;
+}
+
+header i:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.main-container {
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 2rem;
+    border-radius: 3rem;
+}
+
+.stopwatch {
+    font-size: 3rem;
+}
+
+.button-container {
+    display: flex;
+    gap: 1rem;
+}
+
+button {
+    width: 4rem;
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 3rem;
+    background-color: rgb(15, 15, 15);
+    color: white;
+    transition: all 0.4s ease;
+}
+
+button:hover {
+    background-color: #1089eb;
+    transform: scale(1.05);
+    cursor: pointer;
+}
