@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background-color: rgb(15, 15, 15);
+    color: white;
+}
+
+header i {
+    position: absolute;
+    left: 2.5rem;
+    top: 2.5rem;
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.4s ease;
+}
+
+header i:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.container {
+    margin: auto;
+    padding: 4rem 3rem 4rem 4rem;
+    text-align: center;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    background-color: rgba(15, 15, 15);
+    box-shadow: 12px 12px 0 white;
+}
+
+.digital-clock{
+    font-size: 3rem;
+}
