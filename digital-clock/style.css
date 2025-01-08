@@ -39,3 +39,27 @@ header i:hover {
 .digital-clock{
     font-size: 3rem;
 }
+
+@media (max-width:600px) {
+    body {
+        padding: 0 3rem;
+    }
+}
+
+@media (max-width:530px) {
+    .container {
+        padding: 3rem;
+    }
+}
+
+@media (max-width:450px) {
+    body {
+        padding: 0 1rem;
+    }
+    .container {
+        gap: 2rem;
+    }
+    .digital-clock{
+        font-size: 2rem;
+    }
+}

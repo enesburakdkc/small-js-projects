@@ -40,7 +40,7 @@ header i:hover {
     margin: auto;
     gap: 1rem;
     background-color: white;
-    padding: 2rem;
+    padding: 2rem 1.2rem;
     border-radius: 3rem;
     color: rgb(15, 15, 15);
     transition: transform 0.4s ease;

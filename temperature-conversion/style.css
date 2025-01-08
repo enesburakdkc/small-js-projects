@@ -27,6 +27,7 @@ header i:hover {
     display: flex;
     flex-direction: column;
     margin: auto;
+    text-align: center;
     gap: 1rem;
     background-color: white;
     padding: 2rem;
@@ -76,4 +77,10 @@ header i:hover {
 
 .input-radio {
     margin-right: 0.5rem;
+}
+
+@media (max-width:375px) {
+    .container {
+        max-width: 13rem;
+    }
 }

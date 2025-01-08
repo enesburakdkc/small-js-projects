@@ -27,7 +27,7 @@ header i:hover {
 .main-container {
     margin: auto;
     text-align: center;
-    padding: 4rem;
+    padding: 3rem;
     border-radius: 3rem;
     display: flex;
     flex-direction: column;
@@ -96,7 +96,7 @@ header i:hover {
     border-radius: 2rem
 }
 
-.roll:hover {
+.roll:active {
     color: white;
     background-color: rgb(15, 15, 15);
     box-shadow: 9px 9px 0 white;
@@ -114,4 +114,30 @@ header i:hover {
     width: 75px;
     height: 75px;
     border-radius: 1rem;
+}
+
+@media (min-width:768px) {
+    .roll:hover {
+        color: white;
+        background-color: rgb(15, 15, 15);
+        box-shadow: 9px 9px 0 white;
+        cursor: pointer;
+    }
+}
+
+@media (max-width:650px) {
+    .main-container {
+        gap: 2rem;
+    }
+    .form {
+        width: 12rem;
+    }
+    .output-section {
+        max-width: 12rem;
+    }
+    .dice {
+        width: 45px;
+        height: 45px;
+        border-radius: 0.5rem;
+    }
 }

@@ -6,7 +6,7 @@
 body {
     background-color: rgb(15, 15, 15);
     color: white;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
 }
 
@@ -26,7 +26,6 @@ header i:hover {
 
 .container {
     text-align: center;
-    max-width: 20rem;
     margin: auto;
     padding: 1rem;
     border-radius: 2rem;
@@ -53,9 +52,24 @@ header i:hover {
     border-radius: 2rem;
 }
 
-.buttons-container button:hover {
+.buttons-container button:active {
     color: white;
     background-color: rgb(15, 15, 15);
     box-shadow: 12px 12px 0 white;
     cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .buttons-container button:hover {
+        color: white;
+        background-color: rgb(15, 15, 15);
+        box-shadow: 12px 12px 0 white;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 420px) {
+    .container {
+        max-width: 14rem;
+    }
 }
