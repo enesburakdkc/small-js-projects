@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background-color: rgb(15, 15, 15);
+    color: white;
+}
+
+header i {
+    position: absolute;
+    left: 2.5rem;
+    top: 2.5rem;
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.4s ease;
+}
+
+header i:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.main-container {
+    margin: auto;
+    padding: 4rem 3rem 4rem 4rem;
+    text-align: center;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    background-color: rgba(15, 15, 15);
+    box-shadow: 12px 12px 0 white;
+}
+
+.image-slider {
+    position: relative;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border-radius: 3rem;
+    padding: 1rem;
+    display: none;
+}
+
+.displayImage {
+    display: block !important;
+    animation-name: fade;
+    animation-duration: 5s;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    border: 0;
+    border-radius: 2rem;
+    background-color: white;
+    padding: 0.2rem;
+}
+
+.button:hover {
+    color: white;
+    background-color: rgb(15, 15, 15);
+    box-shadow: 0.2rem 0.2rem 0 white;
+    cursor: pointer;
+}
+
+.previous {
+    left: -2rem;
+}
+
+.next {
+    right: -2rem;
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    30% { opacity: 1; }
+    70% { opacity: 1; }
+    100% { opacity: 0; }
+}
